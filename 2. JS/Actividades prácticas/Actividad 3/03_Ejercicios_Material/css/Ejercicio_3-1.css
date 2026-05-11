@@ -1,0 +1,40 @@
+/* Estilos generales del cuerpo del documento para mejorar la legibilidad y estética */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+/* Estilos para los encabezados h2 para destacarlos */
+h2 {
+    color: #333;
+}
+
+/* Estilos para el párrafo dentro del div#texto para mejorar la claridad */
+#texto p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para los botones para hacerlos más atractivos e interactivos */
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de estilo del botón al pasar el ratón por encima para una retroalimentación visual */
+button:hover {
+    background-color: #45a049;
+}

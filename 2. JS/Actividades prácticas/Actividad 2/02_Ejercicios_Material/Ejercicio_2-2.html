@@ -20,8 +20,12 @@
 <script languaje="JavaScript">
 
 // Generar la cadena de texto con toda la lista de multiplos y almacenarla en la variable lista_numeros
+let lista_numeros= "";
 
-
+for (let i = 1600; i >= 1490; i-=5) {
+    lista_numeros +=i + ", ";
+    
+}
 
 //Escribir la cadena de texto en el contendor <div> identificado con el ID "comentario"
 document.getElementById("comentario").innerHTML = lista_numeros;

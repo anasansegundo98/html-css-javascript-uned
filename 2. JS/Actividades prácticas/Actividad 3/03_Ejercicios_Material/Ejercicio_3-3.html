@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Vinculación con la hoja de estilos CSS externa -->
+    <link rel="stylesheet" type="text/css" href="css/Ejercicio_3-3.css">
+    <!-- Script JavaScript para la lógica de cálculo -->
+    <SCRIPT TYPE="text/javascript" SRC="js/Ejercicio_3-3.js"> </SCRIPT>
+    <title>Ejercicio 3-3: Calcula el máximo de dos números</title>
+</head>
+<body>
+    <!-- Título de la sección de entrada -->
+    <h2>Introduzca dos números:</h2>
+        
+    <!-- Formulario para la entrada de datos y el cálculo -->
+    <form name="fomulario">
+        Número 1: <input type="text" id="dato1" size="20"><br>
+        Número 2: <input type="text" id="dato2" size="20"><br>
+        El máximo de estos números es: <input type="text" id="resultado" size="20"><br>
+
+        <!-- Botón para ejecutar el cálculo -->
+        <input type="Button" value="Compara números" 
+        onclick='document.getElementById("resultado").value = calculoMax(document.getElementById("dato1").value,document.getElementById("dato2").value)' >
+    </form>
+</body>
+</html>

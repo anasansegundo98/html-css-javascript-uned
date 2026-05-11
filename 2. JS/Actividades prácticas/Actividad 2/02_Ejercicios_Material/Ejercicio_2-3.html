@@ -1,16 +1,58 @@
 <!doctype html>
-<head>
-<meta charset="utf-8" />
 
-<title>Ejercicio 2-3</title>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Ejercicio 2-3</title>
 
 </head>
 
 <body>
-	
 
-<h1>Ejercicio 2-3</h1>
+    <h1>Ejercicio 2-3</h1>
+    <div id="dni"></div>
+    <div id="fecha"></div>
+    <div id="correo"></div>
+    <script>
+        do {
+            var dni = prompt("Introduzca su DNI (con letra incluida)");
+            let patron = /^\d{8}[A-Z]$/;
+            var resultado = patron.test(dni);
 
+            if (resultado === false) {
+                alert("El dato introducido es incorrecto. Introduce de nuevo");
+            }  
+
+        } while (resultado === false);
+
+        do {
+            var fecha = prompt("Introduzca su fecha de nacimiento (en formato DD/MM/AAAA)");
+            let patron = /^\d{2}\/\d{2}\/\d{4}$/;
+            var resultado = patron.test(fecha);
+
+            if (resultado === false) {
+                alert("El dato introducido es incorrecto. Introduce de nuevo");
+            } 
+        } while (resultado === false);
+
+        do {
+            var correo = prompt("Introduzca su correo electrónico");
+            let patron = /^[\w.]+@[\w]+\.[\w]+$/;
+            var resultado = patron.test(correo);
+
+            if (resultado === false) {
+                alert("El dato introducido es incorrecto. Introduce de nuevo");
+            } 
+
+        } while (resultado === false);
+
+        document.getElementById("dni").innerHTML = "Su DNI es " + dni;
+        document.getElementById("fecha").innerHTML = "Su fecha de nacimiento es " + fecha;
+        document.getElementById("correo").innerHTML = "Su correo es "+ correo;
+
+
+    </script>
 
 </body>
+
 </html>

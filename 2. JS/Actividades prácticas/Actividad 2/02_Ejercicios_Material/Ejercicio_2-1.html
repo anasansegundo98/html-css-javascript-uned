@@ -1,34 +1,51 @@
 <!doctype html>
+
 <head>
-<meta charset="utf-8" />
+    <meta charset="utf-8" />
 
 
-<title>Ejercicio 2-1</title>
+    <title>Ejercicio 2-1</title>
 
 </head>
 
 <body>
 
-<h1> Ejercicio 2-1 </h1>
+    <h1> Ejercicio 2-1 </h1>
 
-<div id="comentario"> </div>
+    <div id="comentario"> </div>
 
+    <script languaje="JavaScript">
 
+        let texto_comentario;
+                
+        do {
+           var edad = prompt("Introduce cuántos años tienes:");
+            edad = parseInt(edad);
 
+            if (edad > 100 || edad < 1 || isNaN(edad)) {
+                alert("El dato introducido es incorrecto. Introduce de nuevo cuántos años tienes");
+            }
 
-<script languaje="JavaScript">
+        } while (edad > 100 || edad < 1 || isNaN(edad));
 
-// Pedir la edad hasta que se introduzca un dato correcto
+        if (edad <= 13) {
+           texto_comentario = "Tienes " + edad + " años, eres muy jovencito";
 
+        } else if (edad >= 14 && edad <= 17) {
+            texto_comentario = "Tienes " + edad + " años, probablemente seas un adolescente insoportable.";
 
-//Generar la cadena de texto a escribir y almacenar en la variable texto_comentario
+        } else if (edad >= 18 && edad < 65) {
+           texto_comentario = "Tienes " + edad + " años, eres mayor de edad.";
 
+        } else if (edad >= 65) {
+           texto_comentario = "Disfruta de tu jubilación";
 
-//Escribir la cadena de texto almacenada en la variable texto_comentario en el 
-// contendor <div> identificado con el ID "comentario"
-document.getElementById("comentario").innerHTML = texto_comentario;
+        }
+        
+        document.getElementById("comentario").innerHTML = texto_comentario;
 
-</script>
+    </script>
 
 </body>
+
 </html>

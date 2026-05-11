@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Ejercicio 1-2</title>
+  </head>
+
+  <body>
+    <script>
+      var digitos = prompt("Introduce los dígitos numéricos del DNI:");
+      var posicion = parseInt(digitos) % 23;
+
+      var letra = "TRWAGMYFPDXBNJZSQVHLCKET".charAt(posicion);
+      document.write("Su DNI completo es: " + digitos + "-" + letra);
+    </script>
+  </body>
+</html>

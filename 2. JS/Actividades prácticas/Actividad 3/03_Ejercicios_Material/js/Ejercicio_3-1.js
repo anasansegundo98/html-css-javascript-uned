@@ -8,4 +8,3 @@ function mensaje2(){
     document.getElementById("texto").innerHTML = "<p>Ha pulsado BOTÓN 2</p>";
 }
 
-

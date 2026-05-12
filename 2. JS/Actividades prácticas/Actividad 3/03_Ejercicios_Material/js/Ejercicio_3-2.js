@@ -14,8 +14,3 @@ function convertir(idCentigrados) {
     return conversion;
 }
 
-
-
-
-
-

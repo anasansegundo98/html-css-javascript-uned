@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6-5</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/Ejercicio_6-5.css">
+</head>
+<body>
+
+    <div class="slideshow-wrap">
+        <h2>Galería de Facultades — UNED</h2>
+           <div id="slideshow" class="cycle-slideshow"
+               data-cycle-fx="fade"
+               data-cycle-timeout="3000"
+               data-cycle-pause-on-hover="true"
+               data-cycle-slides="> img"
+               data-cycle-pager="#pager"
+               data-cycle-prev="#prev"
+               data-cycle-next="#next">
+            <img src="img/fotoCiencias.jpg" alt="Ciencias">
+            <img src="img/fotoEconomicas.jpg" alt="Económicas">
+            <img src="img/fotoEducacion.jpg" alt="Educación">
+            <img src="img/fotoFilologia.jpg" alt="Filología">
+            <img src="img/fotoFilosofia.jpg" alt="Filosofía">
+            <img src="img/fotoGeografiaHistoria.jpg" alt="Geografía e Historia">
+            <img src="img/fotoIndustriales130.jpg" alt="Industriales">
+            <img src="img/fotoInformatica.jpg" alt="Informática">
+            <img src="img/fotoDerecho.jpg" alt="Derecho">
+            <img src="img/fotoPsicologia.jpg" alt="Psicología">
+            <!-- overlay nav buttons -->
+            <button id="prev" class="nav-btn">‹</button>
+            <button id="next" class="nav-btn">›</button>
+        </div>
+
+        <div id="pager" class="cycle-pager"></div>
+    </div>
+
+    <!-- Custom JS (vanilla) for Ejercicio 6-5 -->
+    <script src="js/Ejercicio_6-5.js"></script>
+</body>
+</html>

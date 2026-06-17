@@ -1,0 +1,25 @@
+/* Estilos para Ejercicio 6-5 slideshow */
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:20px;background:#f0f2f4}
+.slideshow-wrap{max-width:800px;margin:0 auto;background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.12);border:1px solid #e6e9ed}
+.slideshow-wrap h2{margin:0 0 12px 0;font-size:20px}
+#slideshow{position:relative;overflow:hidden;border-radius:6px}
+# Make images keep aspect ratio to avoid distortion
+.cycle-slideshow img{width:100%;height:auto;max-height:420px;display:block;filter:blur(2px) contrast(.98);transition:filter .35s ease,transform .35s ease}
+#slideshow:hover img{filter:none}
+
+/* Overlay circular nav buttons */
+.nav-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:rgba(0,0,0,0.45);color:#fff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+#prev{left:12px}
+#next{right:12px}
+.nav-btn:hover{background:rgba(0,0,0,0.6)}
+
+/* Pager (dots) centered beneath slideshow */
+.cycle-pager{margin-top:14px;text-align:center}
+.cycle-pager a{display:inline-block;width:12px;height:12px;border-radius:50%;background:#bdbdbd;margin:0 6px;cursor:pointer;box-shadow:0 1px 0 rgba(255,255,255,.6) inset}
+.cycle-pager a.cycle-pager-active{background:#222;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+
+/* Small responsive tweaks */
+@media (max-width:600px){
+    .cycle-slideshow img{max-height:260px}
+    .nav-btn{width:36px;height:36px}
+}

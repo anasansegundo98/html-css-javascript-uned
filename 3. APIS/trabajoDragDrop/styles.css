@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    margin: 0;
+    background-color: #f0f0f0;
+    gap: 30px;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cajaizda {
+    width: 300px;
+    height: 300px;
+    background-color: #47a192;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cajadcha {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px dashed #47a192;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+img {
+    width: 80px;
+    padding: 10px;
+    cursor: grab;
+}
+h1 {
+    text-align: center;
+    color: #47a192;
+}
